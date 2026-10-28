@@ -1,0 +1,16 @@
+# Copy to stdio-mcp-proxy.toml and edit. That file is gitignored.
+# Default path is ./stdio-mcp-proxy.toml; override with -config.
+# Restart the proxy after editing. Point the client at the printed URL.
+
+[listen]
+addr = "127.0.0.1:18765" # host:port; port 0 asks the OS for an ephemeral port
+path = "/mcp"            # must start with /
+
+[child]
+name = "example" # optional label
+command = "/path/to/mcp-server"
+args = []
+
+# Extra environment passed to the child. Omit the table to pass none.
+[child.env]
+# HOME = "/Users/you"

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pencil": {
+      "url": "http://127.0.0.1:18765/mcp",
+      "description": "pen.dev canvas: read, generate, and validate .pen designs"
+    }
+  }
+}

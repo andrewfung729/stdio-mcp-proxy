@@ -1,0 +1,33 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+# ./build.sh writes this at the repo root; do not match cmd/stdio-mcp-proxy/
+/stdio-mcp-proxy
+
+# Local runtime config (absolute paths, machine-specific).
+# Commit stdio-mcp-proxy.example.toml; keep the real file untracked.
+/stdio-mcp-proxy.toml
+
+# Test
+*.test
+*.out
+coverage.*
+
+# Go workspace
+go.work
+go.work.sum
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
